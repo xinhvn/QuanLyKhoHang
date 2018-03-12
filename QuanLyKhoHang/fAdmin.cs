@@ -37,5 +37,10 @@ namespace QuanLyKhoHang
 
 
         public SqlCommand command { get; set; }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

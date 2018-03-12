@@ -30,12 +30,15 @@
         {
             this.tcGioiThieu = new System.Windows.Forms.TabControl();
             this.tcTaiKhoan = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataAdmin = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
+            this.dataAdmin = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.tcGioiThieu.SuspendLayout();
             this.tcTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataAdmin)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcGioiThieu
@@ -61,24 +64,6 @@
             this.tcTaiKhoan.Text = "Tài Khoản";
             this.tcTaiKhoan.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(508, 323);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Giới Thiệu";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataAdmin
-            // 
-            this.dataAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAdmin.Location = new System.Drawing.Point(6, 6);
-            this.dataAdmin.Name = "dataAdmin";
-            this.dataAdmin.Size = new System.Drawing.Size(485, 239);
-            this.dataAdmin.TabIndex = 0;
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(416, 266);
@@ -88,6 +73,45 @@
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // dataAdmin
+            // 
+            this.dataAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataAdmin.Location = new System.Drawing.Point(6, 6);
+            this.dataAdmin.Name = "dataAdmin";
+            this.dataAdmin.Size = new System.Drawing.Size(485, 239);
+            this.dataAdmin.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btnThoat);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(504, 303);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Giới Thiệu";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(194, 129);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hello Word";
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Location = new System.Drawing.Point(394, 254);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // fAdmin
             // 
@@ -101,6 +125,8 @@
             this.tcGioiThieu.ResumeLayout(false);
             this.tcTaiKhoan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataAdmin)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -112,5 +138,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridView dataAdmin;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnThoat;
     }
 }
